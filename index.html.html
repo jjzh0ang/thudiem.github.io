@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superhero Movies</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #000;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .movie {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .movie img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+    }
+    .movie:hover img {
+      transform: scale(1.05);
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .title {
+      font-weight: bold;
+    }
+    .quality {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>🔥 Superhero Movie Zone 🔥</header>
+  <section class="movie-grid">
+    <div class="movie">
+      <img src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SL1500_.jpg" alt="Avengers: Endgame" />
+      <div class="overlay">
+        <div class="title">Avengers: Endgame</div>
+        <div class="quality">Full HD | Hoàn thành</div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="https://m.media-amazon.com/images/I/81ekfYhJtCL._AC_SL1500_.jpg" alt="The Batman" />
+      <div class="overlay">
+        <div class="title">The Batman (2022)</div>
+        <div class="quality">Full HD | Hoàn thành</div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="https://m.media-amazon.com/images/I/71V--WZVUIL._AC_SL1000_.jpg" alt="Spider-Man" />
+      <div class="overlay">
+        <div class="title">Spider-Man: No Way Home</div>
+        <div class="quality">Full HD | Hoàn thành</div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="https://m.media-amazon.com/images/I/91I9zFfuxjL._AC_SL1500_.jpg" alt="Black Panther" />
+      <div class="overlay">
+        <div class="title">Black Panther</div>
+        <div class="quality">HD | Hoàn thành</div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="https://m.media-amazon.com/images/I/81ecVRzA8bL._AC_SL1500_.jpg" alt="Doctor Strange 2" />
+      <div class="overlay">
+        <div class="title">Doctor Strange 2</div>
+        <div class="quality">Full HD | Hoàn thành</div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="https://m.media-amazon.com/images/I/81qA+9LbhzL._AC_SL1500_.jpg" alt="Guardians of the Galaxy 3" />
+      <div class="overlay">
+        <div class="title">Guardians of the Galaxy 3</div>
+        <div class="quality">Full HD | Hoàn thành</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
